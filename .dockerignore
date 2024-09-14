@@ -1,0 +1,6 @@
+smartContract
+node_modules
+npm-debug.log
+store
+dist
+src/.env

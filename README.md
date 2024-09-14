@@ -1,0 +1,1 @@
+#fluronix-trade-meme-token

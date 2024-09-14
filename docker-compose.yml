@@ -1,0 +1,17 @@
+
+services:
+  buyer:
+    build: .
+    command: node src/main.js
+    volumes:
+      - ./src/utils/memory:/fluronix-trade-meme-token/src/utils/memory
+    env_file:
+      - src/.env
+
+  seller:
+    build: .
+    command: node src/histmanage.js
+    volumes:
+      - ./src/utils/memory:/fluronix-trade-meme-token/src/utils/memory
+    env_file:
+      - src/.env

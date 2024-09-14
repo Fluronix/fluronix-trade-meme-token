@@ -1,0 +1,90 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "fromToPair",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minOutput",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint16",
+          "name": "dexV",
+          "type": "uint16"
+        }
+      ],
+      "name": "executeTrade",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "getBalanceOfToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "fromToPair",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint16",
+          "name": "dexV",
+          "type": "uint16"
+        }
+      ],
+      "name": "simulateBuySell",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "buyAmountOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sellAmountOut",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ]

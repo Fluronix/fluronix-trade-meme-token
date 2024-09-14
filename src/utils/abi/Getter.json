@@ -1,0 +1,231 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "token",
+          "type": "address[]"
+        }
+      ],
+      "name": "getBalanceOfToken",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "balance",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Balview[]",
+          "name": "balances",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "weth",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getLiq",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "WethLiq",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenLiq",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "pool",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "weth",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "version",
+              "type": "uint24"
+            }
+          ],
+          "internalType": "struct Getter.PoolProp[]",
+          "name": "poolProp",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getMultiLiquidity",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "pool",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "wethLid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenLiq",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "sqrtPriceX96",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Getter.LiqView[]",
+          "name": "liqview",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "pool",
+          "type": "address[]"
+        }
+      ],
+      "name": "getMultiSqrtPriceX96",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "token",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "balance",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Balview[]",
+          "name": "poolPriceX96",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "factory",
+              "type": "address"
+            },
+            {
+              "internalType": "uint24",
+              "name": "version",
+              "type": "uint24"
+            }
+          ],
+          "internalType": "struct DexFactory[]",
+          "name": "dexsFactory",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "address[]",
+          "name": "token01",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minLiq",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "pool",
+          "type": "address"
+        }
+      ],
+      "name": "getSqrtPriceX96",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
