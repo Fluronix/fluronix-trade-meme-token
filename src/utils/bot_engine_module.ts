@@ -59,8 +59,11 @@ export class  EngineModule {
                 {value: amount}
             )
             return true
-        }catch(err){
+        }catch(err:any){
             //console.log(er)
+            if(err.info.error.message.includes("insufficient funds for gas")){
+                console.error("INSUFFICIENT WALLET ETH BALANCE")
+            }
             return false
         }
     }
