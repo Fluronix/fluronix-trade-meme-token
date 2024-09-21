@@ -14,7 +14,7 @@ const config: settings ={
   pk: process.env.PRIVATE_KEY??"",
   buyAmount: func.towei(process.env.BUY_AMOUNT_ETH??"0.001", 18),
   holdingDuration: Number(process.env.TOKEN_HOLDING_DURATION??51),
-  takeProfit: Number(process.env.takeProfit??5)
+  takeProfit: Number(process.env.TAKE_PROFIT_PERC??5)
 }
 
 const provider = new ethers.WebSocketProvider(config.wsRpc);
