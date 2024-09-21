@@ -14,6 +14,10 @@ Fluronix Trade Meme Token is an automated trading bot designed to trade newly la
 
 # Installation
 
+Video guide:https://youtu.be/2WZXnU1de7E?si=0Dq0KmCOmsHmUQBq
+Discord:https://discord.com/invite/ybbKsCUWCn
+website:https://fluronix.com/
+
   Clone the repository and then:
   
      cd fluronix-trade-meme-token
